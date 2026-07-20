@@ -19,15 +19,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Generate Tone',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="waveform" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="echo"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Echo Test',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="speaker.wave.2.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="presets"
+        options={{
+          title: 'Presets',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="music.note.list" color={color} />,
         }}
       />
     </Tabs>
